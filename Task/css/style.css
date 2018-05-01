@@ -1,0 +1,131 @@
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+*[class^="col-"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0px 2px;
+  margin-right: -4px;
+}
+
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
+
+.clear {
+  clear: both;
+}
+
+* {
+  transition: all .3s linear;
+}
+
+#service .box {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+#service .box:hover .top-part {
+  top: -6px;
+}
+#service .box:hover .bottom-part {
+  bottom: -10px;
+}
+#service .box .top-part {
+  width: 100%;
+  padding-top: 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+#service .box .top-part i {
+  font-size: 40px;
+}
+#service .box .top-part h1 {
+  font-size: 2.5em;
+  font-family: calibri;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#service .box .top-part h1:hover {
+  color: #37c386;
+}
+#service .box .bottom-part {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 10px 50px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#service .box .bottom-part i {
+  font-size: 25px;
+  margin-top: 15px;
+}
+#service .box .bottom-part p {
+  font-weight: 200;
+  font-family: verdana;
+  font-size: .9em;
+}
+#service .border-right {
+  border-right: 1px solid grey;
+}
+#service .border-top {
+  border-top: 1px solid grey;
+}
+
+#attendance .background_color {
+  width: 100%;
+  background: #3a3c3e;
+}
+#attendance .background_color .header {
+  text-align: center;
+}

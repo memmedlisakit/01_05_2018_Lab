@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   width: 90%;
   margin: 0px auto;
@@ -122,10 +126,152 @@
   border-top: 1px solid grey;
 }
 
-#attendance .background_color {
+#attendance {
+  background: #37c386;
+  position: relative;
+  height: 550px;
+}
+#attendance .position {
+  position: relative;
+  top: -30px;
+  left: 0px;
+}
+#attendance .position .background_color {
   width: 100%;
   background: #3a3c3e;
+  padding: 100px 0px;
 }
-#attendance .background_color .header {
+#attendance .position .background_color .header {
   text-align: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+#attendance .position .background_color .header h4 {
+  color: #74787C;
+  font-size: 25px;
+  margin: 15px 0px;
+}
+#attendance .position .background_color .header h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  margin: 15px 0px;
+}
+#attendance .position .background_color .header p {
+  color: white;
+}
+#attendance .position .background_color .counter {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+}
+#attendance .position .background_color .counter .count_item {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#attendance .position .background_color .counter .count_item h1 {
+  font-size: 55px;
+  margin-bottom: 0px;
+}
+#attendance .position .background_color .counter .count_item .border {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #74787C;
+  transform: skew(-25deg);
+}
+#attendance .position .background_color .counter div:nth-child(4) .count_item .border {
+  border: none;
+}
+#attendance .position .background_color .button_contain {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+#attendance .position .background_color .button_contain span {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  margin: 20px;
+}
+#attendance .position .background_color .button_contain button:nth-child(1), #attendance .position .background_color .button_contain button:nth-child(3) {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  width: 230px;
+  height: 45px;
+  background: #37c386;
+  color: white;
+}
+#attendance .position .background_color .button_contain button:nth-child(3) {
+  background: transparent;
+  border: 2px solid white;
+}
+
+#team {
+  text-align: center;
+  padding: 100px 0px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+#team h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+#team h1 b {
+  font-weight: 700;
+}
+#team .team_contain {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+}
+#team .team_contain .item {
+  padding: 100px 0px;
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  border-right: none;
+  border-left: none;
+  margin: 0px 20px;
+  transition: all .2s linear;
+}
+#team .team_contain .item hr {
+  width: 50%;
+}
+#team .team_contain .item i {
+  color: #37c386;
+}
+#team .team_contain .item:hover {
+  border-top: 5px solid #37c386;
+  border-bottom: 5px solid #37c386;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#team .team_contain .item:hover .img_contain {
+  transform: scale(1.1);
+}
+#team .team_contain .item:hover .img_contain .background {
+  display: none;
+}
+#team .team_contain .item h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#team .team_contain .item .img_contain {
+  margin: 0px auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#team .team_contain .item .img_contain img {
+  width: 100%;
+}
+#team .team_contain .item .img_contain .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
